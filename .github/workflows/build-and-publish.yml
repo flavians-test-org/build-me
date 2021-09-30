@@ -50,5 +50,5 @@ jobs:
           TAG: ${{ steps.version-from-branch.outputs.version }}${{ env.TAG_SUFFIX }}
         with:
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.REPO_NAME }}:${TAG}
+          tags: ${{ env.REGISTRY }}/${{ env.REPO_NAME }}:${{ env.TAG }}
 
